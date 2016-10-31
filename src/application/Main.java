@@ -21,7 +21,12 @@ public class Main extends Application {
 			
 			//Agregar elementos en un VBox para que no se superpongan
 			VBox boxVertical = new VBox();
+			
+			//Agregamos todos los elementos al VBox
 			boxVertical.getChildren().addAll(texto, btn);
+			
+			//Agregar Metodo manejador de Eventos
+			btn.setOnAction(evt -> System.out.println("Encame en proceso..."));
 			
 			root.getChildren().add(boxVertical);
 			Scene scene = new Scene(root,400,400);
