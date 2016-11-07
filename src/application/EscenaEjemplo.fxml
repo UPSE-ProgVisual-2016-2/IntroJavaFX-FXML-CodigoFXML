@@ -5,7 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
 
-<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:controller="application.ControllerEjemplo" xmlns="http://javafx.com/javafx/8" 
+	xmlns:fx="http://javafx.com/fxml/1">
 		<Text text="Cedulacion" 
 			GridPane.rowIndex="0" 
 			GridPane.columnSpan="2" 
@@ -15,12 +16,14 @@
 			GridPane.rowIndex="1" 
 			GridPane.columnIndex="0"  />
 		
-		<TextField GridPane.rowIndex="1" 
+		<TextField fx:id="txtFieldNombre" 
+			GridPane.rowIndex="1" 
 			GridPane.columnIndex="1" />
 	
 		<Button text="Generar Cedula" 
 			GridPane.rowIndex="2" 
 			GridPane.columnIndex="1"
+			onAction="#generarCedula"
 			GridPane.halignment="RIGHT" />	
 </GridPane>
 
