@@ -6,15 +6,16 @@
 <?import javafx.scene.text.Text?>
 
 <GridPane fx:controller="application.ControllerEjemplo" 
+	stylesheets="/ejemplo.css"
 	xmlns="http://javafx.com/javafx/8" 
-	xmlns:fx="http://javafx.com/fxml/1"
-	style="-fx-font-family: Papyrus; -fx-alignment: center; -fx-hgap:10; -fx-vgap: 10" >
+	xmlns:fx="http://javafx.com/fxml/1" 
+	styleClass="root" >
 		
 		<Text text="Cedulacion" 
+			styleClass="titulo"
 			GridPane.rowIndex="0" 
 			GridPane.columnSpan="2" 
-			GridPane.halignment="CENTER"
-			style="-fx-font-size: 80px; -fx-fill: AQUA" />
+			GridPane.halignment="CENTER" />
 		
 		<Label text = "Nombre: " 
 			GridPane.rowIndex="1" 

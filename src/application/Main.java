@@ -20,7 +20,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("EscenaEjemplo.fxml"));
+			//FXMLLoader loader = new FXMLLoader();
+			//loader.setLocation(getClass().getResource("/EscenaEjemplo.fxml"));
+			//Parent root = loader.load();
+			Parent root = FXMLLoader.load(getClass().getResource("/EscenaEjemplo.fxml"));
 
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
